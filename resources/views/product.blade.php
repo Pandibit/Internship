@@ -71,7 +71,7 @@
                             <div class="grid grid-cols-4 gap-6" aria-orientation="horizontal">
                                 @foreach($product->images as $image)
                                     <label
-                                        class="color-button relative h-24
+                                        class="color-button relative h-20
                                         @if($loop->first == $image->color->id)  -span @endif bg-white rounded-md flex items-center justify-center text-sm font-medium uppercase text-gray-900 cursor-pointer hover:bg-gray-50 focus:outline-none focus:ring focus:ring-offset-4 focus:ring-opacity-50"
                                         role="tab"
                                         data-image="{{ asset($image->image_url) }}"
