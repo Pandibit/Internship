@@ -133,7 +133,7 @@
                             <div>
                                 <label for="counter-input"
                                        class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">
-                                    Choose quantity:
+                                    Choose quantity by dev:
                                 </label>
                                 <div class="relative flex items-center">
                                     <button type="button"
