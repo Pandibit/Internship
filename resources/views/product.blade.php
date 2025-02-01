@@ -1,6 +1,6 @@
 <x-app>
     <div class="bg-white">
-        <div class="max-w-2xl  pt-16  sm:pt-24 mx-auto sm:px-6 lg:max-w-7xl ">
+        <div class="max-w-2xl  pt-20 sm:pt-24 mx-auto sm:px-6 lg:max-w-7xl ">
             <div class="mb-4 items-end justify-between space-y-4 sm:flex sm:space-y-0 md:mb-8">
                 <div>
                     <nav class="flex" aria-label="Breadcrumb">
@@ -71,8 +71,8 @@
                             <div class="grid grid-cols-4 gap-6" aria-orientation="horizontal">
                                 @foreach($product->images as $image)
                                     <label
-                                        class="color-button relative h-24
-                                        @if($loop->first == $image->color->id) active-span @endif bg-white rounded-md flex items-center justify-center text-sm font-medium uppercase text-gray-900 cursor-pointer hover:bg-gray-50 focus:outline-none focus:ring focus:ring-offset-4 focus:ring-opacity-50"
+                                        class="color-button relative h-20
+                                        @if($loop->first == $image->color->id)  -span @endif bg-white rounded-md flex items-center justify-center text-sm font-medium uppercase text-gray-900 cursor-pointer hover:bg-gray-50 focus:outline-none focus:ring focus:ring-offset-4 focus:ring-opacity-50"
                                         role="tab"
                                         data-image="{{ asset($image->image_url) }}"
                                         type="button"
