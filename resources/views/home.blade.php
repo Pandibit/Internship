@@ -38,15 +38,20 @@
                     ALL<span aria-hidden="true"> &rarr;</span></a>
             </div>
             <div class="swiper productsSwiper max-w-full  py-16  sm:py-24">
-                <div class="swiper-wrapper flex items-center py-1 ">
+                <div class=" swiper-wrapper flex items-center py-1 ">
                     @foreach($products as $product)
-                        <div class="swiper-slide px-2 ">
+                        <div class="swiper-slide product-swiper-item px-2 ">
                             <x-product.product :product='$product'/>
                         </div>
                     @endforeach
+
+                    <div class="swiper-button-next products-swiper"></div>
+                    <div class="swiper-button-prev products-swiper"></div>
+
+
                 </div>
-                <div class="swiper-button-next products-swiper"></div>
-                <div class="swiper-button-prev products-swiper"></div>
+
+
             </div>
         </section>
 

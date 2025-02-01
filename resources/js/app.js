@@ -1,12 +1,14 @@
 import "./bootstrap";
-import $ from 'jquery';
 import "flowbite";
 import Swiper from "swiper";
 import {Navigation, Pagination, Autoplay} from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import {DataTable} from "simple-datatables";
+
+
+let productsPerView = document.querySelectorAll('.product-swiper-item')
+console.log(productsPerView.length)
 
 const productsSwiper = new Swiper(".productsSwiper", {
     modules: [Navigation, Pagination, Autoplay],
@@ -25,24 +27,25 @@ const productsSwiper = new Swiper(".productsSwiper", {
             slidesPerView: 1
         },
         440: {
-            slidesPerView: 2,
+            slidesPerView: productsPerView.length >= 2 ? 1 : productsPerView.length,
             spaceBetween: 5
         },
         // when window width is >= 480px
         670: {
-            slidesPerView: 3,
+            slidesPerView: productsPerView.length >= 4 ? 4 : productsPerView.length,
             spaceBetween: 5
         },
         // when window width is >= 640px
         1024: {
-            slidesPerView: 4,
+            slidesPerView: productsPerView.length >= 4 ? 4 : productsPerView.length,
             spaceBetween: 5
         }
     }
 });
+
+
 const categorySwiper = new Swiper(".categorySwiper", {
     modules: [Navigation, Pagination, Autoplay],
-    slidesPerView: 4,
     navigation: {
         nextEl: ".swiper-button-next.category-swiper",
         prevEl: ".swiper-button-prev.category-swiper",

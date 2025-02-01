@@ -295,9 +295,9 @@ class AdminController extends Controller
         ]);
     }
 
-    public function destroyProduct(Product $product, Request $req)
+    public function destroyProduct(Product $product)
     {
-        Gate::authorize('delete', $product);
+        
         $product->delete();
         return response()->json([
             'message' => 'Product deleted successfully'
