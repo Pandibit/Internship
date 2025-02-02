@@ -26,7 +26,8 @@
                                     </svg>
                                     <a href="{{ route('categories') }}"
                                        class="ms-1 text-sm font-medium text-gray-700 hover:text-primary-600 dark:text-gray-400 dark:hover:text-white md:ms-2">
-                                        Categories by dev-pandi
+                                        Categories by dev
+                                        
                                     </a>
                                 </div>
                             </li>
@@ -181,6 +182,7 @@
                                     id="addToCartButton"
                                     class="cursor-not-allowed max-w-xs flex-1 bg-indigo-600 opacity-50 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-indigo-500 sm:w-full">
                                 Add to bag by dev-pandi
+                                Add to bag by dev
                             </button>
                         </div>
 
