@@ -180,7 +180,7 @@
                                     disabled
                                     id="addToCartButton"
                                     class="cursor-not-allowed max-w-xs flex-1 bg-indigo-600 opacity-50 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-indigo-500 sm:w-full">
-                                Add to bag
+                                Add to bag by dev
                             </button>
                         </div>
 
